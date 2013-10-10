@@ -1,0 +1,59 @@
+
+" Add vundle package manager
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+"My Bundles to follow"
+"
+"Snipmate dependancies
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+
+"Add nerdtree plugin
+Bundle 'scrooloose/nerdtree'
+
+
+"Add latex-suite plugin
+Bundle 'izx64/Vim-LaTeX-Mirror'
+
+filetype plugin indent on "required for vundle
+syntax enable
+
+" Add Solarized as default colourscheme
+set background=dark
+colorscheme solarized
+
+set number
+
+
+" Set Latex as higher priority than tex
+let g:tex_flavor = "latex"                              " Set latex as the detault tex languange
+set autoindent                                          " Use Smart Indentation
+set nowrap                                              " Disable word wrapping
+set showmatch                                           " Show matching brackets
+set suffixes+=.aux,.blg,.bbl,.log,.dvi,.brf,.cs,.ind    " Lower priority extnesions
+set suffixes+=.idx,.ilg,.inx,.outm,toc
+
+
+
+" toggle the spell checker on and off with ',s'
+let mapleader = ","
+nmap <silent><leader>s : set spell!<CR>
+set spelllang=en_gb                                      " Set the spelling language to brittish english
+
+"ignore case of :w, accept :W because I screw this up all the time
+:command W w
+
+"Set the tab length to something more manageable
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
