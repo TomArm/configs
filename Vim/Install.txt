@@ -1,0 +1,16 @@
+Clone Changes with recursive option
+git clone --recursive git@github.com:TomArm/configs.git
+
+Or
+
+git clone git@github.com:TomArm/configs.git
+git submodule init
+git submodule update
+
+Windows
+Copy _vimrc and _gvimrc into user folder 
+Make a directory .vim
+copy contents of vimfiles/ into this directory
+
+Run :BundleInstall in vim
+
