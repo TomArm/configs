@@ -8,6 +8,7 @@ git submodule init
 git submodule update
 
 Windows
+Install console vera fonts
 Copy _vimrc and _gvimrc into user folder 
 Make a directory .vim
 copy contents of vimfiles/ into this directory
