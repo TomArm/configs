@@ -28,6 +28,7 @@ filetype plugin indent on "required for vundle
 syntax enable
 
 " Add Solarized as default colourscheme
+Bundle 'altercation/vim-colors-solarized'
 set background=dark
 colorscheme solarized
 
